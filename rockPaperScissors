@@ -1,0 +1,56 @@
+// All code should be written in this file. 
+
+//round 1
+let playerOneMoveType = 'rock';
+let playerOneMoveValue = 1;
+let playerTwoMoveType = 'scissors';
+let playerTwoMoveValue = 1;
+//round 2
+let playerOneMoveType2 = 'rock';
+let playerOneMoveValue2 = 80;
+let playerTwoMoveType2 = 'rock';
+let playerTwoMoveValue2 = 90;
+//round 3
+let playerOneMoveType3 = 'paper';
+let playerOneMoveValue3 =  18;
+let playerTwoMoveType3 = 'scissors';
+let playerTwoMoveValue3 = 8;
+
+let result = '';
+//compare moves
+function getRoundWinner (playerOneMoveType, playerTwoMoveType, playerOneMoveValue, playerTwoMoveValue) {
+//tie
+    if (playerOneMoveType == playerTwoMoveType && playerOneMoveValue > playerTwoMoveValue)
+    return result + `player one wins with ${playerOneMoveType} of ${playerOneMoveValue}`;
+    else if(playerOneMoveType == playerTwoMoveType && playerTwoMoveValue > playerOneMoveValue) 
+    return result + `player two wins with ${playerTwoMoveType} of ${playerTwoMoveValue}`
+    else if (playerOneMoveType == playerTwoMoveType && playerOneMovealue == playerTwoMoveValue) 
+    return result + 'tie game'
+
+//rock
+    else if (playerOneMoveType == 'rock' && playerTwoMoveType == 'paper')
+    return result + `player two wins with ${playerTwoMoveValue}`
+    else if (playerOneMoveType == 'rock' && playerTwoMoveType == 'scissors')
+    return result + `player one wins with ${playerOneMoveType}`
+
+//paper
+    else if (playerOneMoveType == 'paper' && playerTwoMoveType == 'scissors')
+    return result + `player one wins with ${playerOneMoveType}`
+    else if (playerOneMoveType == 'paper' && playertwoMoveType =='rock')
+    return result + `player two wins with ${playerTwoMoveValue}`
+
+
+//scissors
+   else if (playerOneMoveType == 'scissors' && playertwoMoveType == 'paper')
+   return result + `player one wins with ${playerOneMoveType}`
+   else if (playerOneMoveType == 'scissors' && playertwoMoveType == 'rock')
+   return result + `player two wins with ${playertwoMoveType}`
+
+}
+//shoot!
+console.log('round 1:');
+console.log(getRoundWinner(playerOneMoveType, playerTwoMoveType, playerOneMoveValue, playerTwoMoveValue));
+console.log('round 2:');
+console.log(getRoundWinner(playerOneMoveType2, playerTwoMoveType2, playerOneMoveValue2, playerTwoMoveValue2));
+console.log('round 3:');
+console.log(getRoundWinner(playerOneMoveType3, playerTwoMoveType3, playerOneMoveValue3, playerTwoMoveValue3));
