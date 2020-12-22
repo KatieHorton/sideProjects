@@ -7,17 +7,19 @@ indeed return 55.
 */
 
 let numArray = [];
+let newAray = [];
 let accumulator = 0;
 
 
-function sum(numArray) {
-  return numArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-}
 
 function range(start, end) {
     for(let i = start; i <= end; i++)
     console.log(numArray.push(i));
-    console.log(sum(numArray));
+    return numArray
+}
+
+function sum(numArray) {
+  return newArray = numArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
 console.log(sum(range(1, 10)));
