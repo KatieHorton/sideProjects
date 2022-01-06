@@ -54,10 +54,13 @@ is either a space or a "#" character. The characters should form a chessboard.
 
 */
 
-let string = ' # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n'
-console.log(string);
-
-
+// let string = ' # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n'
+// console.log(string);
+function size(num = 1) {
+  let chessBoard = (' # # # #\n# # # # \n'.repeat(num));
+console.log(chessBoard);
+}
+console.log(size(8));
 
 
 //CHAPTER3
