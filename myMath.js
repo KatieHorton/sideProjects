@@ -65,7 +65,7 @@ function power(base, exponent = 2) {
 // console.log(power(2, 6)); // 64
 
 
-// quadratic (parabolic) equasion
+// quadratic (parabolic) equation
 function quadratic(a, b, c) {
     let num = Math.sqrt(power(b, 2) - (4 * a * c))
     return  (-b + num) / 2
