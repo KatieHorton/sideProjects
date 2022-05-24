@@ -329,6 +329,8 @@ Arrays.sumOfAll = function ([...numbers]) {
     }
     return total
 }
+// console.log('sum of numbers is: ');
+// console.log(Arrays.sumOfAll([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 55
 
 // GUESSING GAME
 
@@ -364,8 +366,6 @@ function binarySearch(array, target) {
 
 console.log(binarySearch(primeNums, 73));
 console.log(binarySearch(primeNums, 40));
-// console.log('sum of numbers is: ');
-// console.log(Arrays.sumOfAll([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 55
 
 /*  NOT READY!!
 Calculations.imaginaryPower = function(expo) {
